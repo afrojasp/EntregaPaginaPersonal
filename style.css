@@ -1,25 +1,43 @@
+:root {
+    --primary-color: #fb8500;
+    --background-color: #ffb703;
+    --text-color: #023047;
+}
+
 @keyframes navbar {
-    0%   {background-color: #9521D4;}
-    50%  {background-color: #EFE7F2;}
-    100%  {background-color:  #9521D4;}
-  }
+    0% {
+        background-color: var(--primary-color);
+    }
+    50% {
+        background-color: var(--background-color);
+    }
+    100% {
+        background-color: var(--primary-color);
+    }
+}
 
 @keyframes itemsNav {
-    0%   {color: #000000;}
-    50%  {color: #9521D4;}
-    100%  {color:  #000000;}
-  }
+    0% {
+        color: #000000;
+    }
+    50% {
+        color: var(--text-color);
+    }
+    100% {
+        color: #000000;
+    }
+}
 
-#rouzajorPhoto{
-    display:block;
-    margin:auto;
+#rouzajorPhoto {
+    display: block;
+    margin: auto;
     width: 100%;
     height: auto;
     max-width: 300px;
-    max-height: 400px ;
+    max-height: 400px;
 }
 
-#brand{
+#brand {
     font-family: 'Zilla Slab', serif;
     color: black;
     font-size: 50px;
@@ -29,57 +47,56 @@
     animation-iteration-count: infinite;
 }
 
-#navBar{
+#navBar {
     animation-name: navbar;
     animation-duration: 10s;
     animation-iteration-count: infinite;
 }
 
-.regularText{
+.regularText {
     font-family: 'Roboto Slab', serif;
-    font-size : 20px;
+    font-size: 20px;
     margin: 10px;
 }
 
-.listText{
+.listText {
     font-family: 'Roboto Slab', serif;
-    font-size : 15px;
+    font-size: 15px;
     margin: 5px;
 }
 
-.header{
+.header {
     font-family: 'Zilla Slab', serif;
     text-align: center;
-    color : #9521D4;
+    color: var(--text-color);
     margin: 20px;
 }
 
-.itemNav{
+.itemNav {
     font-family: 'Zilla Slab', serif;
-    font-size : 20px;
+    font-size: 20px;
     margin-right: 30px;
 }
 
-.wordsNav{
+.wordsNav {
     animation-name: itemsNav;
     animation-duration: 10s;
     animation-iteration-count: infinite;
 }
 
-
-.interestsPhoto{
-    display:block;
-    margin:auto;
-    box-shadow: 0 4px 8px 0  #9521D4, 0 6px 20px 0  #9521D4;
+.interestsPhoto {
+    display: block;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 var(--background-color), 0 6px 20px 0 var(--background-color);
     height: 50%;
     width: 50%;
 }
 
-.experiencePhoto{
-    display:block;
-    margin:auto;
+.experiencePhoto {
+    display: block;
+    margin: auto;
     max-width: 150px;
-    max-height: 150px ;
+    max-height: 150px;
 }
 
 .flex-container {
